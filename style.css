@@ -1,0 +1,160 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color: rgb(230,239,245);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.panel {
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 15px 25px;
+    text-align: center;
+    width: 100%;
+    max-width: 750px;
+    height: 65vh;
+}
+
+.panel-item{
+    padding: 15px 35px;
+}
+
+.panel-item:nth-of-type(1){
+    background-color: white; 
+}
+
+.panel-item:nth-of-type(2){
+background-color: #2BB2B1;
+color: white;
+}
+
+.panel-item:nth-of-type(3){
+    background-color: #49BDBD;
+    color: white;
+}
+
+.join-heading{
+    font-size: 1.5rem;
+    color: #2BB2B1;
+    font-weight: 800;
+    margin: 25px 0;
+}
+
+.join-heading-2{
+    color: hsl(71, 73%, 54%);
+    font-weight: 800;
+    margin: 25px 0;
+}
+
+.info{
+    color: hsl(204, 43%, 93%);
+}
+
+.heading{
+    color: white;
+    font-weight: 800;
+    font: 20px;
+}
+
+.pricing-button{
+    background-color: hsl(71, 73%, 54%);
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 25px 0;
+    padding: 15px 35px;
+    width: 80%;
+    text-align: center;
+}
+
+
+@media(min-width: 800px){
+
+    .panel{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    
+    .panel-item:nth-of-type(2){
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+        
+    .panel-item:nth-of-type(3){
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        }
+
+}
+
+
+
+
+
